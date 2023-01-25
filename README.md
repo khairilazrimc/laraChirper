@@ -5,13 +5,13 @@
 
 ## About LaraChirper
 
-LaraGigster is a project developed based on Laravel [Bootcamp](https://www.youtube.com/watch?v=MYyJ4PuL4pY) and [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by PHP Annotated.
+LaraChirper is a project developed based on Laravel [Bootcamp](https://www.youtube.com/watch?v=MYyJ4PuL4pY) and [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by PHP Annotated.
 
 It is built as a twitter-like application that intends to record, manage, and display messages (Chirps) posted by registered users (Chirper). 
 
 <br>
 
-## LaraGigster Use-Case
+## LaraChirper Use-Case
 
 Guest
 - Register as a Chirper
@@ -26,7 +26,7 @@ Chirper
 
 <br>
 
-## Within LaraGigster
+## Within LaraChirper
 
 This project utilizes the Laravel v9 **framework** with inclusion of Vue.js to catter for the front-end views, glued together using InertiaJS. Below are the other framework that are also used in this project:
 - npm install dayjs - to convert time and date details to more user readable details.
