@@ -3,70 +3,66 @@
 
 <br>
 
-## About LaraGigster
+## About LaraChirper
 
-LaraGigster is a youtube crash course project built based on [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by Traversy Media. 
+LaraGigster is a project developed based on Laravel [Bootcamp](https://www.youtube.com/watch?v=MYyJ4PuL4pY) and [this video](https://www.youtube.com/watch?v=MYyJ4PuL4pY) posted by PHP Annotated.
 
-It is built as a system that intends to be the home of Laravel-based projects or jobs where the User (Gigster) have to sign-up to post the vacancies they have in their jobs/projects (Gigs).
+It is built as a twitter-like application that intends to record, manage, and display messages (Chirps) posted by registered users (Chirper). 
 
 <br>
 
 ## LaraGigster Use-Case
 
 Guest
-- View all Gigs
-- Search for Gigs
-- Register as a Gigster
-- Login to Gigster account
+- Register as a Chirper
+- Login to Chirper account
 
-Gigster
-- View all Gigs
-- Search for Gigs
-- Post/Create Gig
-- Edit/Update posted Gig
-- Delete posted Gig
-- Logout from Gigster account
+Chirper
+- View all Chirps
+- Post/Create Chirps
+- Edit/Update posted Chirps
+- Delete posted Chirps
+- Logout from Chirper account
 
 <br>
 
 ## Within LaraGigster
 
-This project utilizes the initial Laravel v9 **framework** with several inclusions of other frameworks which links can be found inside //resources/views/components/layout.blade.php:
-- fontawesome
-- tailwindcss
-- alpinejs
+This project utilizes the Laravel v9 **framework** with inclusion of Vue.js to catter for the front-end views, glued together using InertiaJS. Below are the other framework that are also used in this project:
+- npm install dayjs - to convert time and date details to more user readable details.
+- composer require spatie/laravel-mail-preview - to view mail sent by the system
+- composer require laravel/breeze --dev - to supply the application with a complete authentication system - php artisan breeze:install
+- npm run dev - to build the view from Vue.js
 
-This project only make use of 2 **controllers** which can be found inside //app/Http/Controllers/. Inside these controllers, several basic functions have been declared:
-- show all/filtered listings
-- listings pagination
-- form validations
-- attachment uploads
+This project only make use of 2 **controllers**, named ChirpController.php and ProfileController.php(Breeze) which can be found inside //app/Http/Controllers/. Inside these controller, several basic functions have been declared:
+- page rendering using Inertia JS
+- show all Chirps 
+- form validation
 - object creation/edit/delete
 - user authentication
-- page redirection
-- flash message
-- listing management acording to user
+- user profile update/delete
 - user registration/login/logout
 
-This project only have 2 **models** which are Users.php (have many listings) and Listing.php (belong to user) which can be found inside //app/Models/. Inside these models several basic functions have been declared:
-- listings scopeFilter
+This project only have 2 **models** which are Users.php (have many Chirp) and Listing.php (belongs to User) which can be found inside //app/Models/. Inside these models several basic functions have been declared:
+- protected data
 - object relationship
 
-This project uses the blade **view**, utilizing its basic features such as:
-- components directory  - <code>`<x-comp>`...`</x-comp>` - {{ $slot }}</code>
-- components variables  - <code>`<x-comp :varsCsv="$vars->var" />` - @props(['varsCsv'])</code>
-- components attribute  - <code>`<div {{ $attributes->merge(['class' => 'class-name']) }}>`...`</div>`</code>
-- partials directory    - <code>@include('partials._filename')</code>
-- inline PHP function   - <code>@unless()@else@endunless, @if()@endif, @foreach()@endforeach</code>
-- inline PHP echo       - <code>{{ $message }}</code>
-- form features         - <code>@csrf, @method('PUT/DELETE'), @error('inputname')@enderror</code>
-- listings pagination   - <code>{{ $vars->links() }}</code>
+This project utilizes Vue.js to make up its **view**:
+- breeze  - resources/js/Components/
+- breeze  - resources/js/Layouts/
+- breeze  - resources/js/Pages/Auth/
+- index   - resources/js/Pages/Chirps/
+- breeze  - resources/js/Pages/Profile/
+- breeze  - resources/js/Pages/Profile/Partials
 
-This project utilizes MySQL **database**. The SQL file pertaining to the database is included inside this repo named laragigster.sql which has several test data. Similarly, this repo also encompasses the required factories, migrations, and seeders which can be executed as to showcase the same results of that of the included SQL file.
+This project utilizes SqlLite **database**. This repo encompasses the required factories and migrationsfiles which can be executed as to showcase the initial built of this application.
 
 Last but not least, the project was build using these **version** of frameworks:
 - PHP 8.2.0
-- MySQL 8.2.0
-- Laravel 9.47.0
+- Laravel 9.48.0
+- Composer 2.5.1
+- Laravel Breeze 1.18
+- NPM 8.19.3
+- Vite 4.0.4 - plugin 0.7.3\
 
 So with that, I humbly thank you.
