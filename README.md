@@ -55,7 +55,7 @@ This project utilizes Vue.js to make up its **view**:
 - breeze  - resources/js/Pages/Profile/
 - breeze  - resources/js/Pages/Profile/Partials
 
-This project utilizes SqlLite **database**. This repo encompasses the required factories and migrationsfiles which can be executed as to showcase the initial built of this application.
+This project utilizes SqlLite **database**. This repo encompasses the required factory and migration files which can be executed as to showcase the initial built of this application.
 
 Last but not least, the project was build using these **version** of frameworks:
 - PHP 8.2.0
