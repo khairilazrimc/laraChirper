@@ -55,7 +55,7 @@ This project utilizes Vue.js to make up its **view**:
 - breeze  - resources/js/Pages/Profile/
 - breeze  - resources/js/Pages/Profile/Partials
 
-This project utilizes SqlLite **database**. This repo encompasses the required factory and migration files which can be executed as to showcase the initial built of this application.
+This project utilizes MySQL **database**. The SQL file pertaining to the database is included inside this repo named LaraGates.sql which has several test data. Similarly, this repo also encompasses the required factories, migrations, and seeders which can be executed as to showcase the same results of that of the included SQL file.
 
 Last but not least, the project was build using these **version** of frameworks:
 - PHP 8.2.0
